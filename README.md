@@ -23,7 +23,6 @@ Os desafios originais foram feitos usando o Power BI da Microsoft, que é bem ma
 
 <details>
     <summary><h3>Algoritmo Genético Simples em Python</h3></summary>
-Claro! Vou criar um algoritmo genético simples em Python, utilizando o formato do Google Colab, com blocos de código separados e explicações detalhadas. Vamos adicionar emojis para tornar as explicações mais atraentes e claras. 
 
 ### Algoritmo Genético Simples em Python
 
