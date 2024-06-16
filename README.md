@@ -14,8 +14,8 @@ Os desafios originais foram feitos usando o Power BI da Microsoft, que é bem ma
 ![DALL·E 2024-06-16 09 53 25 - Create a horizontal black and white noir-style comic strip banner in an 8_9 format that represents Machine Learning  The scene should feature a detect](https://github.com/carolhcs/ML-Engineering-Data-Science/assets/14095834/ffc133d8-bc43-42c4-af03-eab23b349f1f)
 
 ## Algoritmos Basicos de Machine Learning
-[Exemplo de uso do MATPLOT LIB](https://github.com/carolhcs/ML-Engineering-Data-Science/blob/main/Projeto_ML_01_DIO.ipynb)
-
+[Exemplo de uso do MATPLOT LIB DIO](https://github.com/carolhcs/ML-Engineering-Data-Science/blob/main/Projeto_ML_01_DIO.ipynb)
+[Rede Neural do Zero DIO](https://github.com/carolhcs/ML-Engineering-Data-Science/blob/main/Rede_Neural_do_Zero_DIO.ipynb)
 
 ### Algoritmo Genético (GA)
 
