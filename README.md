@@ -38,9 +38,8 @@ O Power BI é uma ferramenta de Business Intelligence (BI) da Microsoft que perm
 ### Power BI em Python
 [Conexão e criação de um sistema base para análise de dados e geração de relatórios e gráficos](https://github.com/carolhcs/ML-Engineering-Data-Science/blob/main/PowerBI_Python.ipynb)
 
-
 ### Criando Um Relatório Gerencial de Vendas com Power BI
-
-
+[Criando Um Relatório Gerencial de Vendas com Power BI (com Python)](https://github.com/carolhcs/ML-Engineering-Data-Science/blob/main/PowerBI_Python_01.ipynb)
 
 ### Criando um Dashboard corporativo com integração com MySQL e Azure
+
