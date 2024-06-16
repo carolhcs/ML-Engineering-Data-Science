@@ -15,6 +15,7 @@ Os desafios originais foram feitos usando o Power BI da Microsoft, que é bem ma
 
 ## Algoritmos Basicos de Machine Learning
 [Exemplo de uso do MATPLOT LIB DIO](https://github.com/carolhcs/ML-Engineering-Data-Science/blob/main/Projeto_ML_01_DIO.ipynb)
+
 [Rede Neural do Zero DIO](https://github.com/carolhcs/ML-Engineering-Data-Science/blob/main/Rede_Neural_do_Zero_DIO.ipynb)
 
 ### Algoritmo Genético (GA)
