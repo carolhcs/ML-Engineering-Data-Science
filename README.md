@@ -24,8 +24,6 @@ Os desafios originais foram feitos usando o Power BI da Microsoft, que é bem ma
 <details>
     <summary><h3>Algoritmo Genético Simples em Python</h3></summary>
 
-### Algoritmo Genético Simples em Python
-
 #### 🧬 Introdução aos Algoritmos Genéticos
 Um algoritmo genético (AG) é uma técnica de busca heurística inspirada no processo de evolução natural. Ele é usado para encontrar soluções aproximadas para problemas de otimização e pesquisa.
 
