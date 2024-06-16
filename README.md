@@ -5,7 +5,7 @@
 Exercicios e Desfios do Bootcamp da DIO de Python Data Analytics - Machine Learning Engineering e Data Science
 ### Desafio de Projeto criado durante o bootcamp de Python Data Analytics da DIO
 #### por Hellen Caroline Salvato
-💻
+💻 [carolsalvato.com](https://carolsalvato.com) | [Linkedin](www.linkedin.com/in/hellencarolinesalvato) | [Perfil DIO](https://www.dio.me/users/carol_lgl) 
 
 Os desafios originais foram feitos usando o Power BI da Microsoft, que é bem mais imples e amigavel. Porém como existem varias limitações relacionadas a ele, resolvi refazer meu desafio em python, como uma forma de me desafiar.
 
@@ -152,4 +152,9 @@ if __name__ == '__main__':
 Para um deployment em produção, considere utilizar serviços de hospedagem que suportem aplicações Python, como Heroku, AWS, ou Azure App Service. Certifique-se de proteger suas credenciais e seguir boas práticas de segurança ao configurar sua aplicação e banco de dados.
 
 </details>
+
+----------------------------------------------------------------
+
+![image](https://github.com/carolhcs/ML-Engineering-Data-Science/assets/14095834/56963b32-0d4d-44fc-b58d-a77387ee3e55)
+
 
