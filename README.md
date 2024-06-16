@@ -36,7 +36,7 @@ Os desafios originais foram feitos usando o Power BI da Microsoft, que é bem ma
 O Power BI é uma ferramenta de Business Intelligence (BI) da Microsoft que permite a coleta, processamento, visualização e compartilhamento de dados. Ele é utilizado para transformar dados brutos em informações visuais e interativas, facilitando a tomada de decisões baseada em dados. 
 
 ### Power BI em Python
-
+[Conexão e criação de um sistema base para análise de dados e geração de relatórios e gráficos](https://github.com/carolhcs/ML-Engineering-Data-Science/blob/main/PowerBI_Python.ipynb)
 
 
 ### Criando Um Relatório Gerencial de Vendas com Power BI
