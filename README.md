@@ -19,7 +19,135 @@ Os desafios originais foram feitos usando o Power BI da Microsoft, que é bem ma
 [Rede Neural do Zero DIO](https://github.com/carolhcs/ML-Engineering-Data-Science/blob/main/Rede_Neural_do_Zero_DIO.ipynb)
 
 ### Algoritmo Genético (GA)
+[Algoritmo Genético Simples em Python](https://github.com/carolhcs/ML-Engineering-Data-Science/blob/main/Basic_GA.ipynb)
 
+<details>
+    <summary><h3>Algoritmo Genético Simples em Python</h3></summary>
+Claro! Vou criar um algoritmo genético simples em Python, utilizando o formato do Google Colab, com blocos de código separados e explicações detalhadas. Vamos adicionar emojis para tornar as explicações mais atraentes e claras. 
+
+### Algoritmo Genético Simples em Python
+
+#### 🧬 Introdução aos Algoritmos Genéticos
+Um algoritmo genético (AG) é uma técnica de busca heurística inspirada no processo de evolução natural. Ele é usado para encontrar soluções aproximadas para problemas de otimização e pesquisa.
+
+#### 🛠️ Instalação de Bibliotecas Necessárias
+
+```python
+# 📦 Instalando bibliotecas necessárias
+!pip install numpy
+```
+
+#### 🧩 Importação de Bibliotecas
+
+```python
+# 📚 Importando bibliotecas necessárias
+import numpy as np
+import random
+```
+
+#### 🧬 Funções de Auxílio
+
+```python
+# 🛠️ Funções de auxílio
+
+# Função de fitness para avaliar a adequação de uma solução
+def fitness_function(individual):
+    return sum(individual)  # Exemplo simples: soma dos elementos do indivíduo
+
+# Função para criar um indivíduo
+def create_individual(length):
+    return [random.randint(0, 1) for _ in range(length)]
+
+# Função para criar uma população inicial
+def create_population(size, length):
+    return [create_individual(length) for _ in range(size)]
+```
+
+#### 👫 Seleção Natural
+
+```python
+# 👫 Seleção natural
+
+# Função para selecionar indivíduos com base em sua aptidão (fitness)
+def select(population, fitnesses, num_to_select):
+    fitnesses = np.array(fitnesses)
+    probabilities = fitnesses / fitnesses.sum()
+    selected_indices = np.random.choice(len(population), size=num_to_select, p=probabilities)
+    return [population[i] for i in selected_indices]
+```
+
+#### 🔄 Crossover e Mutação
+
+```python
+# 🔄 Crossover e mutação
+
+# Função de crossover (cruzamento) de dois indivíduos
+def crossover(parent1, parent2):
+    crossover_point = random.randint(1, len(parent1) - 1)
+    child1 = parent1[:crossover_point] + parent2[crossover_point:]
+    child2 = parent2[:crossover_point] + parent1[crossover_point:]
+    return child1, child2
+
+# Função de mutação de um indivíduo
+def mutate(individual, mutation_rate=0.01):
+    for i in range(len(individual)):
+        if random.random() < mutation_rate:
+            individual[i] = 1 - individual[i]  # Inverte o bit
+    return individual
+```
+
+#### 🌱 Evolução da População
+
+```python
+# 🌱 Evolução da população
+
+# Função principal para evoluir a população
+def genetic_algorithm(pop_size, ind_length, generations, mutation_rate):
+    population = create_population(pop_size, ind_length)
+    
+    for generation in range(generations):
+        # Calculando a aptidão (fitness) de cada indivíduo
+        fitnesses = [fitness_function(individual) for individual in population]
+        
+        # Seleção natural
+        selected = select(population, fitnesses, pop_size // 2)
+        
+        # Criando a próxima geração
+        next_generation = []
+        while len(next_generation) < pop_size:
+            parent1, parent2 = random.sample(selected, 2)
+            child1, child2 = crossover(parent1, parent2)
+            next_generation.append(mutate(child1, mutation_rate))
+            if len(next_generation) < pop_size:
+                next_generation.append(mutate(child2, mutation_rate))
+        
+        population = next_generation
+        
+        # Melhor indivíduo da geração atual
+        best_individual = max(population, key=fitness_function)
+        print(f'Geração {generation + 1}: Melhor Fitness = {fitness_function(best_individual)}')
+    
+    return best_individual
+```
+
+#### 🚀 Executando o Algoritmo
+
+```python
+# 🚀 Executando o algoritmo genético
+
+pop_size = 100  # Tamanho da população
+ind_length = 10  # Tamanho de cada indivíduo (número de genes)
+generations = 50  # Número de gerações
+mutation_rate = 0.01  # Taxa de mutação
+
+best_solution = genetic_algorithm(pop_size, ind_length, generations, mutation_rate)
+print('Melhor solução encontrada:', best_solution)
+```
+
+### 📊 Conclusão
+Este código implementa um algoritmo genético simples que pode ser adaptado para diversos tipos de problemas de otimização. Modificando a função de fitness e ajustando os parâmetros, você pode aplicar este algoritmo a problemas específicos em diferentes áreas.
+
+</details>
 
 ### Algoritmo de colonia de formigas
 
